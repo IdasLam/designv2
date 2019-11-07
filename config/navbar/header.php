@@ -51,7 +51,7 @@ return [
         [
             "text" => "Test",
             "url" => "test",
-            "title" => "Testa olika saker med md",
+            "title" => "Testa olika saker med markdown",
         ],
     ],
 ];
