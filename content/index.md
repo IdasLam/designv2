@@ -9,6 +9,11 @@ views:
             meta:
                 type: single
                 route: block/byline
+    flash:
+        region: flash
+        template: anax/v2/image/default
+        data:
+            src: "image/photo-alley.jpg?width=1100&height=150&crop-to-fit=100,0,0,0"
 ---
 Min me-sida i kursen design
 =========================
