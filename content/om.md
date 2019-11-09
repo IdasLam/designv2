@@ -21,7 +21,7 @@ Kursen syftar till en orientering inom områden design och användbarhet, specif
     </div>
     <div>
         <h2>Redovisa på GitHub</h2>
-        <p>Här hittar du mitt kursrepå på <a target="__BLANK__" href="https://github.com/IdasLam/designv2">GitHub</a>.</p>
+        <p>Här hittar du mitt kursrepo på <a target="__BLANK__" href="https://github.com/IdasLam/designv2">GitHub</a>.</p>
     </div>
 </div>
 
