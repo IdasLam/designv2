@@ -206,6 +206,16 @@ body[class^=route-redovisning] .block.toc {
     margin-bottom: 3vh;
 }
 
+.route-style .region-flash-message {
+    background-color: #fadb14;
+    padding: 20px;
+}
+
+.route-style .region-flash-message .flashmessage.info {
+    width: 60%;
+    margin: 0 auto;
+}
+
 /* tools page */
 
 body[class^=route-verktyg] .breadcrumb-list {
@@ -227,7 +237,6 @@ body[class^=route-verktyg] .region-flash {
 body[class^=route-verktyg] img {
     max-width: 1000px;
 }
-
 
 /* Hide submenu, leave this to kmom02 */
 .rm-desktop ul {
