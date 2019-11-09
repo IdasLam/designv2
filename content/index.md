@@ -1,5 +1,5 @@
 ---
-title: "Min fina titel"
+title: "Index"
 views:
     byline:
         region: main
@@ -9,17 +9,19 @@ views:
             meta:
                 type: single
                 route: block/byline
-    flash:
-        region: flash
-        template: anax/v2/image/default
-        data:
-            src: "image/photo-alley.jpg?width=1100&height=150&crop-to-fit=100,0,0,0"
 ---
-Min me-sida i kursen design
-=========================
+<div class="hero-block" markdown="1">
+<img src="image/me.png?w=300" alt="">
 
-[FIGURE src="image/me.png?w=300" class="right" caption="Bild på mig"]
+<div class="text-about-me">
+    <h1>Ida Lam</h1>
 
-Jag heter Ida och är född och uppvuxen i Linköping där jag gick på Berzeliusskolan som student på det naturvetenskapliga programmet. Under gymnasietiden läste jag även tekniska kurser som CAD och programming 1. Under 2018 tog jag studenten och efter sommaren tog mig till Karlskrona för att studera på Blekinge Tekniska Högskola till civilingenjör i spel- och programvaruteknik. Jag studerade lite mer än en termin och insåg att det var inget jag vill jobba med. Jag bestämde mig kort därefter att söka till webbprogrammering som började under höst treminen 2019.
+    Jag är född och uppvuxen i Linköping där jag gick på Berzeliusskolan som student på det naturvetenskapliga programmet. Under gymnasietiden läste jag även tekniska kurser som CAD och programming 1. Under 2018 tog jag studenten och efter sommaren tog mig till Karlskrona för att studera på Blekinge Tekniska Högskola till civilingenjör i spel- och programvaruteknik. Jag studerade lite mer än en termin och insåg att det var inget jag vill jobba med. Jag bestämde mig kort därefter att söka till webbprogrammering som började under höst treminen 2019.
+    <br><br>
+    På fritiden brukar jag änga min tid att titta på serier men även lyssna på musik. Jag har även intresse av att spela datorspel men numera bara spelar tillsammans med kompisar.
 
-På fritiden brukar jag änga min tid att titta på serier men även lyssna på musik. Jag har även intresse av att spela datorspel men numera bara spelar tillsammans med kompisar.
+</div>
+
+
+</div>
+
