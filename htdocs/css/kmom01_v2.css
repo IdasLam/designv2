@@ -1,0 +1,289 @@
+/*!
+ * LESS version of the stylesheet for design kmom01.
+ *
+ * This stylesheet is for the design course and kmom01. Its intention is to
+ * use kmom01.css and lessify the style and use this as a wrapper for the new
+ * style.
+ */
+/**
+ * Internal self contained modules, save in directory module/.
+ */
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+/**
+ * Variables
+ */
+@font-face {
+  font-family: 'Staatliches';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Staatliches Regular'), local('Staatliches-Regular'), url(https://fonts.gstatic.com/s/staatliches/v3/HI_OiY8KO6hCsQSoAPmtMYebvpU.ttf) format('truetype');
+}
+/**
+ * General layout
+ */
+/* Hide submenu, leave this to kmom02 */
+.rm-desktop ul {
+  display: none;
+}
+/* Hide responsive/mobile menu, leave this to kmom02 */
+.rm-navbar-max {
+  display: none;
+}
+/* Header and navbar */
+.outer-wrap.outer-wrap-header {
+  background-color: #fadb14;
+}
+.outer-wrap.outer-wrap-header .region-header {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  place-items: center;
+  font-size: 1.5em;
+  padding: 3vh 0;
+}
+.outer-wrap.outer-wrap-header .site-logo {
+  display: none;
+}
+.outer-wrap.outer-wrap-header .my-navbar.rm-default.rm-desktop {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  column-gap: 5vw;
+  list-style: none;
+}
+.outer-wrap.outer-wrap-header .my-navbar.rm-default.rm-desktop li a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.outer-wrap.outer-wrap-header .my-navbar.rm-default.rm-desktop li a:hover {
+  color: #e64fa2;
+}
+/* homepage */
+.hero-block {
+  background-color: #fadb14;
+  box-shadow: 0px 20px 20px #98474740;
+  height: 70vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10px;
+  place-content: center;
+}
+.hero-block p:first-child {
+  display: flex;
+  place-content: center;
+}
+.hero-block p:first-child img {
+  width: 350px;
+  box-shadow: 10px 10px #ff85c0;
+  place-self: center;
+}
+.hero-block .text-about-me {
+  width: 70%;
+  font-size: 1.2em;
+}
+.hero-block .text-about-me .text-about-me h1 {
+  margin: 2vh 0;
+  font-family: Staatliches,cursive;
+  font-size: 2.5em;
+  letter-spacing: 3px;
+  padding-bottom: 2vh;
+}
+/* byline */
+.byline {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  width: 40%;
+  margin: 4vh auto;
+}
+.byline img {
+  width: 100px;
+  place-self: center;
+  border-radius: 50%;
+}
+/* footer */
+.columns.footer-column-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 70%;
+  margin: 1vh auto;
+  column-gap: 3vw;
+}
+.block.site-footer {
+  text-align: center;
+  padding: 2vh 0;
+}
+/* background color on other pages */
+body[class^=route-redovisning] .inner-wrap.inner-wrap-main,
+body[class^=route-om] .article,
+body[class^=route-style] .region-main,
+body[class^=route-verktyg] .outer-wrap.outer-wrap-main,
+body[class^=route-test] .article {
+  padding: 20px;
+  background-color: #fadb14;
+  box-shadow: 0px 20px 20px #98474740;
+}
+/* Redovisningar page */
+body[class^=route-redovisning] .breadcrumb-list {
+  display: none;
+}
+body[class^=route-redovisning] .block.toc .toc {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  list-style: none;
+}
+body[class^=route-redovisning] .block.toc .toc li a {
+  color: black;
+}
+body[class^=route-redovisning] .next-previous,
+body[class^=route-redovisning] .article,
+body[class^=route-redovisning] .next-previous {
+  padding: 10px 25vw;
+}
+body[class^=route-redovisning] .next {
+  margin-bottom: 3vh;
+}
+body[class^=route-redovisning] .block.toc {
+  width: 86%;
+  margin: 0 auto;
+}
+/* About page */
+.route-om .article h1,
+.route-om .article p:first-of-type {
+  width: 60%;
+  margin: 0 auto;
+}
+.route-om .article h1 {
+  padding: 3vh 0;
+}
+.route-om .article p {
+  padding: 1vh 0;
+}
+.route-om figure {
+  text-align: center;
+}
+.route-om .wrap-sidebar.region-sidebar-right.has-sidebar-right.has-sidebar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 50%;
+  margin: 0 auto;
+  column-gap: 2vw;
+}
+.route-om .links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 60%;
+  margin: 0 auto;
+}
+/* align on page */
+.route-style .region-main > *,
+.route-test .article > * {
+  width: 69%;
+  margin: 0 auto;
+}
+.route-style .region-main h1,
+.route-style .region-main p,
+.route-test .article > * {
+  padding: 2vh 0;
+}
+/* stylechooser page */
+.route-style .region-main .stylechooser {
+  margin-bottom: 3vh;
+}
+.route-style .region-flash-message {
+  background-color: #fadb14;
+  padding: 20px;
+}
+.route-style .region-flash-message .flashmessage.info {
+  width: 60%;
+  margin: 0 auto;
+}
+/* tools page */
+body[class^=route-verktyg] .breadcrumb-list {
+  display: none;
+}
+body[class^=route-verktyg] .inner-wrap.inner-wrap-main .row {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  width: 80%;
+  margin: 2vh auto;
+  column-gap: 2vw;
+}
+body[class^=route-verktyg] .region-flash {
+  display: none;
+}
+body[class^=route-verktyg] img {
+  max-width: 1000px;
+}
+/**
+ * Style for the stylechooser.
+ */
+/**
+ * Variables
+ */
+/**
+ * Style
+ */
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+html {
+  overflow-y: scroll;
+}
+html,
+body {
+  background-color: #ff85c0;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Fira Sans, sans-serif;
+}
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+/**
+ * Layout for responsive style through media queries.
+ */
+@media screen and (max-width: 1500px) {
+  .site-logo {
+    display: none;
+  }
+}
+/**
+ * Show off the regions used in the website, to ease styling.
+ */
+.regions .outer-wrap {
+  background-color: #f4e3c9;
+  border: 1px solid #e3b774;
+}
+.regions .inner-wrap {
+  background-color: #f4e0e9;
+  border: 1px solid #d995b4;
+}
+.regions .region-header-col-1,
+.regions .region-header-col-2,
+.regions .region-header-col-3,
+.regions .region-flash,
+.regions .region-breadcrumb,
+.regions .region-flash-message,
+.regions .region-columns-above,
+.regions .region-main,
+.regions .region-after-main,
+.regions .region-columns-below,
+.regions .region-sidebar-left,
+.regions .region-sidebar-right,
+.regions .region-footer,
+.regions .region-footer-column-1,
+.regions .region-footer-column-2,
+.regions .region-footer-column-3 {
+  background-color: #b5dce1;
+  border: 1px solid #6cbac4;
+  color: #111;
+}
+/**
+ * My own settings, not currently in their own module.
+ */
