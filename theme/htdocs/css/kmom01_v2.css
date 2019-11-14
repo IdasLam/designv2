@@ -246,14 +246,6 @@ body {
  * and other regions of the page including route specific styles.
  */
 /**
- * Layout for responsive style through media queries.
- */
-@media screen and (max-width: 1500px) {
-  .site-logo {
-    display: none;
-  }
-}
-/**
  * Show off the regions used in the website, to ease styling.
  */
 .regions .outer-wrap {

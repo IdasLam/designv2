@@ -5058,7 +5058,8 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 .hero-block {
   background-color: #fadb14;
   box-shadow: 0px 20px 20px #98474740;
-  height: 70vh;
+  height: fit-content;
+  padding: 20px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 10px;
@@ -5213,9 +5214,50 @@ body[class^=route-verktyg] img {
 /**
  * Layout for responsive style through media queries.
  */
-@media screen and (max-width: 1500px) {
-  .site-logo {
-    display: none;
+@media screen and (max-width: 1600px) {
+  .rm-max.rm-navbar {
+    top: 66px;
+    right: 64px;
+  }
+  .outer-wrap.outer-wrap-header .region-header {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+  }
+  .outer-wrap.outer-wrap-header .region-header-col-1 {
+    padding-left: 4vw;
+  }
+  .outer-wrap.outer-wrap-header .rm-default a {
+    padding: 0;
+  }
+  .outer-wrap.outer-wrap-header .my-navbar.rm-default.rm-desktop {
+    column-gap: 3vw;
+  }
+}
+@media screen and (max-width: 1120px) {
+  .outer-wrap.outer-wrap-header .region-header {
+    grid-template-columns: unset;
+    grid-template-rows: auto;
+  }
+  body[class^=route-redovisning] .block.toc .toc {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 2vh;
+  }
+}
+@media screen and (max-width: 980px) {
+  p {
+    font-size: 1.2em;
+  }
+  a {
+    font-size: 1em;
+  }
+  .hero-block p:first-child img {
+    width: auto;
+  }
+  .hero-block .text-about-me {
+    width: 80%;
+  }
+  .stylechooser select {
+    width: 60vw;
   }
 }
 /**
