@@ -5121,23 +5121,25 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 }
 /* background color on other pages */
 .route-om .inner-wrap.inner-wrap-main,
+.route-test .inner-wrap.inner-wrap-main,
 body[class^=route-redovisning] .inner-wrap.inner-wrap-main,
 body[class^=route-style] .region-main,
-body[class^=route-verktyg] .outer-wrap.outer-wrap-main,
-body[class^=route-test] .article {
+body[class^=route-verktyg] .outer-wrap.outer-wrap-main {
   padding: 20px;
   background-color: #fadb14;
   box-shadow: 0px 20px 20px #98474740;
 }
-/* Redovisningar page */
-body[class^=route-redovisning] .breadcrumb-list {
-  display: none;
-}
-body[class^=route-redovisning] .outer-wrap.outer-wrap-main .row {
+/* grid on redovisa and om */
+body[class^=route-verktyg] .inner-wrap.inner-wrap-main .row,
+body[class^=route-redovisning] .inner-wrap.inner-wrap-main .row {
   display: grid;
   grid-template-columns: 1fr 2fr;
   width: 80%;
   margin: 2vh auto;
+}
+/* Redovisningar page */
+body[class^=route-redovisning] .breadcrumb-list {
+  display: none;
 }
 body[class^=route-redovisning] .block.toc .toc {
   list-style: none;
@@ -5193,10 +5195,6 @@ body[class^=route-verktyg] .breadcrumb-list {
   display: none;
 }
 body[class^=route-verktyg] .inner-wrap.inner-wrap-main .row {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  width: 80%;
-  margin: 2vh auto;
   column-gap: 2vw;
 }
 body[class^=route-verktyg] .region-flash {
@@ -5204,6 +5202,13 @@ body[class^=route-verktyg] .region-flash {
 }
 body[class^=route-verktyg] img {
   max-width: 1000px;
+}
+/* test page*/
+.route-test .inner-wrap.inner-wrap-main .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 80%;
+  margin: 2vh auto;
 }
 /**
  * Layout for responsive style through media queries.
@@ -5274,6 +5279,9 @@ body[class^=route-verktyg] img {
   }
   body[class^=route-verktyg] .inner-wrap.inner-wrap-main .row .block.toc {
     display: none;
+  }
+  .byline {
+    width: 70%;
   }
 }
 /**
