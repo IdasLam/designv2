@@ -1,13 +1,21 @@
 ---
 views:
-    byline:
-        region: main
+    test1:
+        region: sidebar-left
         template: anax/v2/block/default
-        sort: 2
+        sort: 0
         data:
             meta:
                 type: single
-                route: block/byline
+                route: block/test1
+    test2:
+        region: sidebar-right
+        template: anax/v2/block/default
+        sort: 1
+        data:
+            meta:
+                type: single
+                route: block/test2
 ---
 Test
 ===========
