@@ -4894,7 +4894,7 @@ template {
 }
 /* homepage */
 .hero-block p:first-child {
-  margin-left: 50.52083333%;
+  margin-left: 42.1875%;
 }
 .hero-block p:first-child img {
   margin-left: -20px;
@@ -4902,12 +4902,12 @@ template {
   box-shadow: 10px 10px #ff85c0;
 }
 .hero-block .text-about-me {
-  margin-left: 42.1875%;
+  margin-left: 17.1875%;
 }
 /* byline */
 .byline {
   padding: 5vh 0;
-  margin-left: 42.1875%;
+  margin-left: 17.1875%;
 }
 .byline img {
   display: inline;
@@ -4920,7 +4920,7 @@ template {
   margin-left: -5px;
 }
 .byline p {
-  margin-left: 40%;
+  margin-left: 20%;
 }
 /* footer */
 .footer-column {
@@ -5621,6 +5621,7 @@ hr::after {
   }
 }
 @media screen and (max-width: 1000px) {
+  /* background color on other pages */
   .outer-wrap-main .region-main {
     display: inline;
     float: left;
@@ -5628,18 +5629,20 @@ hr::after {
     margin-left: 0.52083333%;
     margin-right: 0.52083333%;
   }
+  /* Burger menu */
   .outer-wrap-header .rm-max.rm-navbar {
     top: 5vh;
     right: 10vw;
   }
+  /* homepage */
   .hero-block p:first-child {
-    margin-left: 54.6875%;
+    margin-left: 42.1875%;
   }
   .hero-block .text-about-me {
-    margin-left: 33.85416667%;
+    margin-left: 13.02083333%;
   }
   .byline {
-    margin-left: 33.85416667%;
+    margin-left: 13.02083333%;
   }
   .outer-wrap-main .region-main {
     margin-left: 13.02083333%;
@@ -5653,7 +5656,7 @@ hr::after {
     display: none !important;
   }
   .hero-block p:first-child {
-    margin-left: 42.1875%;
+    margin-left: 25.52083333%;
   }
   .hero-block p:first-child img {
     width: 200px;
