@@ -4897,12 +4897,16 @@ template {
   margin-left: 42.1875%;
 }
 .hero-block p:first-child img {
-  margin-left: -20px;
+  margin-left: -10px;
   width: 265px;
   box-shadow: 10px 10px #ff85c0;
 }
 .hero-block .text-about-me {
   margin-left: 17.1875%;
+}
+.hero-block .text-about-me h1,
+.hero-block .text-about-me p {
+  margin-left: 15px;
 }
 /* byline */
 .byline {
@@ -4917,10 +4921,10 @@ template {
   margin-right: 0.52083333%;
   width: 100px;
   border-radius: 50%;
-  margin-left: -5px;
+  margin-left: 15px;
 }
 .byline p {
-  margin-left: 20%;
+  margin-left: 25%;
 }
 /* footer */
 .footer-column {
