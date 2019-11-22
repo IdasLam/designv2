@@ -7,11 +7,11 @@
 * Import Fonts
 */
 @font-face {
-  font-family: 'Staatliches';
+  font-family: 'Oswald';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Staatliches Regular'), local('Staatliches-Regular'), url(https://fonts.gstatic.com/s/staatliches/v3/HI_OiY8KO6hCsQSoAPmtMYebvpU.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/oswald/v29/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUZiYA.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Roboto';
@@ -5334,7 +5334,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Staatliches, cursive, "serif";
+  font-family: 'Oswald', sans-serif;
   margin-top: 24px;
   margin-bottom: 24px;
 }

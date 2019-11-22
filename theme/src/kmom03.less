@@ -7,7 +7,7 @@
 /**
 * Import Fonts
 */
-@import url('https://fonts.googleapis.com/css?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 /**
@@ -34,11 +34,10 @@
  * Import the vertical grid.
  */
 @import "@desinax/vertical-grid/less/grid.less";
-@import "layout/vgrid.less";
 
 /**
- * Import the typographic grid.
- */
+* Import the typographic grid.
+*/
 @import "@desinax/typographic-grid/less/typography-font-families.less";
 @import "@desinax/typographic-grid/less/typography-defaults.less";
 
@@ -63,6 +62,7 @@
 * Layout style for general structure of header, navbar, main, footer
 * and other regions of the page including route specific styles.
 */
+@import "layout/layout03.less";
 @import "layout/responsive03.less";
 @import "layout/regions.less";     // To add style for ?regions
 
@@ -78,7 +78,7 @@
 @fontSizeBody: 16px;
 
 // Default font-families
-@fontFamilyHeadings: Staatliches, cursive, "serif";
+@fontFamilyHeadings: 'Oswald', sans-serif;
 @fontFamilyBody:     Roboto, "sans-serif";
 @fontFamilyCode:     "monospace";
 
