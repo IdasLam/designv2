@@ -5563,6 +5563,10 @@ hr::after {
 body[class^=route-redovisning] .breadcrumb-list {
   display: none;
 }
+body[class^=route-redovisning] .outer-wrap-flash-message {
+  padding: 20px;
+  background-color: #d9f7be;
+}
 body[class^=route-redovisning] .block.toc .toc,
 body[class^=route-verktyg] .block.toc .toc {
   list-style: none;
