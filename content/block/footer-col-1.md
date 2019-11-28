@@ -1,3 +1,5 @@
-#### Footer col 1
+#### Github
 
-Med brödtext i ett stycke som säger något trevligt om just detta block, eller kanske en lista av länkar.
+Kursen på [GitHub](https://github.com/dbwebb-se/design).
+
+Mitt [GitHub](https://github.com/IdasLam/designv2).
