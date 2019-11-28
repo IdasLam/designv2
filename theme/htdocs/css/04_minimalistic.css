@@ -1,5 +1,5 @@
 /*!
- * Stylesheet for design kmom03.
+ * Stylesheet for design kmom04 - minimalistic.
  *
  * This stylesheet is for the design course and kmom02 where we use LESS.
  */
@@ -7,18 +7,18 @@
 * Import Fonts
 */
 @font-face {
-  font-family: 'Oswald';
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/oswald/v29/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUZiYA.ttf) format('truetype');
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Roboto';
+  font-family: 'Playfair Display';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+  src: local('Playfair Display Regular'), local('PlayfairDisplay-Regular'), url(https://fonts.gstatic.com/s/playfairdisplay/v15/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYhQ.ttf) format('truetype');
 }
 /**
  * Normalize and reset the style.
@@ -5079,12 +5079,13 @@ html {
 }
 html,
 body {
-  background-color: #ff85c0;
+  background-color: #f1f1f1;
   margin: 0;
-  font-family: Roboto, "sans-serif";
+  font-family: 'Open Sans', sans-serif;
+  color: #262626;
 }
 body {
-  font: 16px/1.5 Roboto, "sans-serif";
+  font: 16px/1.5 'Open Sans', sans-serif;
 }
 h1,
 h2,
@@ -5092,7 +5093,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Playfair Display', serif;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -5108,7 +5109,7 @@ h1 {
   font-size: 2.375em;
   line-height: 1.26315789;
   font-weight: normal;
-  border-bottom: 1px solid #e64fa2;
+  border-bottom: 1px solid #006D75;
   margin-bottom: 23px;
 }
 h1 ~ h1,
@@ -5127,7 +5128,7 @@ h2 {
   line-height: 1.6;
   font-weight: normal;
   margin-bottom: 23px;
-  border-bottom: 1px solid #e64fa2;
+  border-bottom: 1px solid #006D75;
 }
 h2 + h3 {
   margin-top: 24px;
@@ -5137,7 +5138,7 @@ h3 {
   line-height: 1.71428571;
   font-weight: normal;
   margin-bottom: 23px;
-  border-bottom: 1px solid #e64fa2;
+  border-bottom: 1px solid #006D75;
 }
 h3 + h4 {
   margin-top: 24px;
@@ -5147,7 +5148,7 @@ h4 {
   line-height: 1;
   font-weight: normal;
   margin-bottom: 23px;
-  border-bottom: 1px solid #e64fa2;
+  border-bottom: 1px solid #006D75;
 }
 h4 + h5 {
   margin-top: 24px;
@@ -5423,13 +5424,17 @@ hr::after {
 }
 /* Header and navbar */
 .rm-desktop ul {
-  background-color: #fadb14 !important;
+  background-color: #f5f5f5 !important;
 }
 .rm-default.rm-mobile.rm-clicked {
-  background-color: #e64fa2;
+  background-color: #262626;
+}
+.rm-mobile,
+.rm-max .rm-small .rm-button.rm-clicked {
+  color: #f5f5f5;
 }
 .outer-wrap-header {
-  background-color: #fadb14;
+  background-color: #f5f5f5;
   padding: 2vh;
 }
 .outer-wrap-header .inner-wrap-header {
@@ -5467,15 +5472,15 @@ hr::after {
 }
 .outer-wrap-header .my-navbar.rm-default.rm-desktop li a {
   padding-left: 0;
-  color: black;
+  color: #262626;
   text-decoration: none;
   transition: color 0.3s;
 }
 .outer-wrap-header .my-navbar.rm-default.rm-desktop li a:hover {
-  color: #e64fa2;
+  color: #006D75;
 }
 .outer-wrap-header .rm-button.rm-clicked {
-  color: #fadb14;
+  color: #f5f5f5;
 }
 .outer-wrap-header .rm-max.rm-navbar {
   top: 5vh;
@@ -5488,7 +5493,7 @@ hr::after {
 .hero-block p:first-child img {
   margin-left: -10px;
   width: 265px;
-  box-shadow: 10px 10px #ff85c0;
+  box-shadow: 10px 10px #f1f1f1;
 }
 .hero-block .text-about-me {
   margin-left: 17.1875%;
@@ -5528,8 +5533,8 @@ hr::after {
 }
 /* background color on other pages */
 .outer-wrap-main {
-  background-color: #fadb14;
-  box-shadow: 0px 20px 20px #98474740;
+  background-color: #f5f5f5;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
   padding: 2vh;
 }
 .outer-wrap-main .region-main {
@@ -5558,7 +5563,11 @@ body[class^=route-verktyg] .block.toc .toc {
 }
 body[class^=route-redovisning] .block.toc .toc li a,
 body[class^=route-verktyg] .block.toc .toc li a {
-  color: black;
+  color: #262626;
+}
+/* rapport */
+body[class^=route-rapport] .outer-wrap-breadcrumb {
+  display: none;
 }
 /* About page */
 .route-om .row .region-main {
@@ -5578,7 +5587,7 @@ body[class^=route-verktyg] .block.toc .toc li a {
 }
 /* stylechooser page */
 .route-style .outer-wrap-flash-message {
-  background-color: #fadb14;
+  background-color: #f5f5f5;
   padding: 10px;
 }
 .route-style .region-main {
@@ -5737,5 +5746,8 @@ body[class^=route-verktyg] .region-flash {
   color: #111;
 }
 /**
-* My own settings, not currently in their own module.
+* Minimalistic theme
 */
+.outer-wrap-header .my-navbar.rm-default.rm-desktop {
+  display: none;
+}

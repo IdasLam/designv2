@@ -4786,250 +4786,8 @@ template {
      */
 }
 /**
- * Layout style for general structure of header, navbar, main, footer
- * and other regions of the page including route specific styles.
- */
-/**
- * Variables
- */
-/* kmom03 grid */
-.row {
-  display: block;
-  width: 101.04166667%;
-  margin-left: -0.52083333%;
-  margin-right: -0.52083333%;
-}
-.row::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-.inner-wrap {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 1100px;
-}
-.vgrid .inner-wrap {
-  background: url("../img/grid_24x30x10-nomargin.png") repeat-y scroll center center;
-  background-size: 100% auto;
-}
-@media (min-width: 1100px) {
-  .vgrid .inner-wrap {
-    background-size: 1100px auto;
-  }
-}
-.vgrid .inner-wrap.inner-wrap-header,
-.vgrid .inner-wrap.inner-wrap-footer {
-  background: url("../img/grid_24x30x10-nomargin.png") repeat-y scroll center center;
-  background-size: 100% auto;
-}
-@media (min-width: 100%) {
-  .vgrid .inner-wrap.inner-wrap-header,
-  .vgrid .inner-wrap.inner-wrap-footer {
-    background-size: 100% auto;
-  }
-}
-.hgrid .inner-wrap {
-  background-image: url("../img/magic-number-24px.png");
-}
-/* Header and navbar */
-.rm-desktop ul {
-  background-color: #fadb14 !important;
-}
-.rm-default.rm-mobile.rm-clicked {
-  background-color: #e64fa2;
-}
-.outer-wrap-header {
-  background-color: #fadb14;
-  padding: 2vh;
-}
-.outer-wrap-header .inner-wrap-header {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 100%;
-}
-.outer-wrap-header .region-header {
-  font-size: 1.5em;
-}
-.outer-wrap-header .region-header .region-header-col-1,
-.outer-wrap-header .region-header .region-header-col-3 {
-  display: inline;
-  float: left;
-  width: 32.29166667%;
-  margin-left: 0.52083333%;
-  margin-right: 0.52083333%;
-}
-.outer-wrap-header .region-header .region-header-col-2 {
-  display: inline;
-  float: left;
-  width: 44.79166667%;
-  margin-left: 0.52083333%;
-  margin-right: 0.52083333%;
-}
-.outer-wrap-header .site-logo-text-icon img {
-  height: 80px;
-  padding-left: 38%;
-}
-.outer-wrap-header .site-logo {
-  display: none;
-}
-.outer-wrap-header .my-navbar.rm-default.rm-desktop {
-  list-style: none;
-}
-.outer-wrap-header .my-navbar.rm-default.rm-desktop li a {
-  padding-left: 0;
-  color: black;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-.outer-wrap-header .my-navbar.rm-default.rm-desktop li a:hover {
-  color: #e64fa2;
-}
-.outer-wrap-header .rm-button.rm-clicked {
-  color: #fadb14;
-}
-.outer-wrap-header .rm-max.rm-navbar {
-  top: 5vh;
-  right: 2.4vw;
-}
-/* homepage */
-.hero-block p:first-child {
-  margin-left: 42.1875%;
-}
-.hero-block p:first-child img {
-  margin-left: -10px;
-  width: 265px;
-  box-shadow: 10px 10px #ff85c0;
-}
-.hero-block .text-about-me {
-  margin-left: 17.1875%;
-}
-.hero-block .text-about-me h1,
-.hero-block .text-about-me p {
-  margin-left: 15px;
-}
-/* byline */
-.byline {
-  padding: 5vh 0;
-  margin-left: 17.1875%;
-}
-.byline img {
-  display: inline;
-  float: left;
-  width: 15.625%;
-  margin-left: 0.52083333%;
-  margin-right: 0.52083333%;
-  width: 100px;
-  border-radius: 50%;
-  margin-left: 15px;
-}
-.byline p {
-  margin-left: 25%;
-}
-/* footer */
-.footer-column {
-  display: inline;
-  float: left;
-  width: 32.29166667%;
-  margin-left: 0.52083333%;
-  margin-right: 0.52083333%;
-}
-.site-footer {
-  margin-left: 42.1875%;
-}
-/* background color on other pages */
-.outer-wrap-main {
-  background-color: #fadb14;
-  box-shadow: 0px 20px 20px #98474740;
-  padding: 2vh;
-}
-.outer-wrap-main .region-main {
-  display: inline;
-  float: left;
-  width: 65.625%;
-  margin-left: 0.52083333%;
-  margin-right: 0.52083333%;
-  margin-left: 4.6875%;
-}
-.outer-wrap-main .region-sidebar-left {
-  display: inline;
-  float: left;
-  width: 28.125%;
-  margin-left: 0.52083333%;
-  margin-right: 0.52083333%;
-}
-/* Redovisningar page */
-body[class^=route-redovisning] .breadcrumb-list {
-  display: none;
-}
-body[class^=route-redovisning] .block.toc .toc,
-body[class^=route-verktyg] .block.toc .toc {
-  list-style: none;
-  padding-left: 2.5vw;
-}
-body[class^=route-redovisning] .block.toc .toc li a,
-body[class^=route-verktyg] .block.toc .toc li a {
-  color: black;
-}
-/* About page */
-.route-om .row .region-main {
-  display: inline;
-  float: left;
-  width: 65.625%;
-  margin-left: 0.52083333%;
-  margin-right: 0.52083333%;
-}
-.route-om .row .region-sidebar-right {
-  display: inline;
-  float: left;
-  width: 28.125%;
-  margin-left: 0.52083333%;
-  margin-right: 0.52083333%;
-  margin-left: 4.6875%;
-}
-/* stylechooser page */
-.route-style .outer-wrap-flash-message {
-  background-color: #fadb14;
-  padding: 10px;
-}
-.route-style .region-main {
-  display: inline;
-  float: left;
-  width: 73.95833333%;
-  margin-left: 0.52083333%;
-  margin-right: 0.52083333%;
-  margin-left: 13.02083333%;
-}
-/* tools page */
-body[class^=route-verktyg] .breadcrumb-list {
-  display: none;
-}
-body[class^=route-verktyg] .region-flash {
-  display: none;
-}
-/* test page*/
-.route-test .inner-wrap-main .region-sidebar-right,
-.route-test .inner-wrap-main .region-sidebar-left {
-  display: inline;
-  float: left;
-  width: 19.79166667%;
-  margin-left: 0.52083333%;
-  margin-right: 0.52083333%;
-}
-.route-test .inner-wrap-main .region-sidebar-right {
-  margin-left: 4.6875%;
-}
-.route-test .inner-wrap-main .region-main {
-  display: inline;
-  float: left;
-  width: 48.95833333%;
-  margin-left: 0.52083333%;
-  margin-right: 0.52083333%;
-  margin-left: 4.6875%;
-}
-/**
- * Import the typographic grid.
- */
+* Import the typographic grid.
+*/
 /**
  * Typographic font families to choose from.
  */
@@ -5616,6 +5374,248 @@ hr::after {
 * Layout style for general structure of header, navbar, main, footer
 * and other regions of the page including route specific styles.
 */
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+/**
+ * Variables
+ */
+/* kmom03 grid */
+.row {
+  display: block;
+  width: 101.04166667%;
+  margin-left: -0.52083333%;
+  margin-right: -0.52083333%;
+}
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.inner-wrap {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1100px;
+}
+.vgrid .inner-wrap {
+  background: url("../img/grid_24x30x10-nomargin.png") repeat-y scroll center center;
+  background-size: 100% auto;
+}
+@media (min-width: 1100px) {
+  .vgrid .inner-wrap {
+    background-size: 1100px auto;
+  }
+}
+.vgrid .inner-wrap.inner-wrap-header,
+.vgrid .inner-wrap.inner-wrap-footer {
+  background: url("../img/grid_24x30x10-nomargin.png") repeat-y scroll center center;
+  background-size: 100% auto;
+}
+@media (min-width: 100%) {
+  .vgrid .inner-wrap.inner-wrap-header,
+  .vgrid .inner-wrap.inner-wrap-footer {
+    background-size: 100% auto;
+  }
+}
+.hgrid .inner-wrap {
+  background-image: url("../img/magic-number-24px.png");
+}
+/* Header and navbar */
+.rm-desktop ul {
+  background-color: #fadb14 !important;
+}
+.rm-default.rm-mobile.rm-clicked {
+  background-color: #e64fa2;
+}
+.outer-wrap-header {
+  background-color: #fadb14;
+  padding: 2vh;
+}
+.outer-wrap-header .inner-wrap-header {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 100%;
+}
+.outer-wrap-header .region-header {
+  font-size: 1.5em;
+}
+.outer-wrap-header .region-header .region-header-col-1,
+.outer-wrap-header .region-header .region-header-col-3 {
+  display: inline;
+  float: left;
+  width: 32.29166667%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
+.outer-wrap-header .region-header .region-header-col-2 {
+  display: inline;
+  float: left;
+  width: 44.79166667%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
+.outer-wrap-header .site-logo-text-icon img {
+  height: 80px;
+  padding-left: 38%;
+}
+.outer-wrap-header .site-logo {
+  display: none;
+}
+.outer-wrap-header .my-navbar.rm-default.rm-desktop {
+  list-style: none;
+}
+.outer-wrap-header .my-navbar.rm-default.rm-desktop li a {
+  padding-left: 0;
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.outer-wrap-header .my-navbar.rm-default.rm-desktop li a:hover {
+  color: #e64fa2;
+}
+.outer-wrap-header .rm-button.rm-clicked {
+  color: #fadb14;
+}
+.outer-wrap-header .rm-max.rm-navbar {
+  top: 5vh;
+  right: 2.4vw;
+}
+/* homepage */
+.hero-block p:first-child {
+  margin-left: 42.1875%;
+}
+.hero-block p:first-child img {
+  margin-left: -10px;
+  width: 265px;
+  box-shadow: 10px 10px #ff85c0;
+}
+.hero-block .text-about-me {
+  margin-left: 17.1875%;
+}
+.hero-block .text-about-me h1,
+.hero-block .text-about-me p {
+  margin-left: 15px;
+}
+/* byline */
+.byline {
+  padding: 5vh 0;
+  margin-left: 17.1875%;
+}
+.byline img {
+  display: inline;
+  float: left;
+  width: 15.625%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+  width: 100px;
+  border-radius: 50%;
+  margin-left: 15px;
+}
+.byline p {
+  margin-left: 25%;
+}
+/* footer */
+.footer-column {
+  display: inline;
+  float: left;
+  width: 32.29166667%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
+.site-footer {
+  margin-left: 42.1875%;
+}
+/* background color on other pages */
+.outer-wrap-main {
+  background-color: #fadb14;
+  box-shadow: 0px 20px 20px #98474740;
+  padding: 2vh;
+}
+.outer-wrap-main .region-main {
+  display: inline;
+  float: left;
+  width: 65.625%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+  margin-left: 4.6875%;
+}
+.outer-wrap-main .region-sidebar-left {
+  display: inline;
+  float: left;
+  width: 28.125%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
+/* Redovisningar page */
+body[class^=route-redovisning] .breadcrumb-list {
+  display: none;
+}
+body[class^=route-redovisning] .block.toc .toc,
+body[class^=route-verktyg] .block.toc .toc {
+  list-style: none;
+  padding-left: 2.5vw;
+}
+body[class^=route-redovisning] .block.toc .toc li a,
+body[class^=route-verktyg] .block.toc .toc li a {
+  color: black;
+}
+/* About page */
+.route-om .row .region-main {
+  display: inline;
+  float: left;
+  width: 65.625%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
+.route-om .row .region-sidebar-right {
+  display: inline;
+  float: left;
+  width: 28.125%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+  margin-left: 4.6875%;
+}
+/* stylechooser page */
+.route-style .outer-wrap-flash-message {
+  background-color: #fadb14;
+  padding: 10px;
+}
+.route-style .region-main {
+  display: inline;
+  float: left;
+  width: 73.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+  margin-left: 13.02083333%;
+}
+/* tools page */
+body[class^=route-verktyg] .breadcrumb-list {
+  display: none;
+}
+body[class^=route-verktyg] .region-flash {
+  display: none;
+}
+/* test page*/
+.route-test .inner-wrap-main .region-sidebar-right,
+.route-test .inner-wrap-main .region-sidebar-left {
+  display: inline;
+  float: left;
+  width: 19.79166667%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
+.route-test .inner-wrap-main .region-sidebar-right {
+  margin-left: 4.6875%;
+}
+.route-test .inner-wrap-main .region-main {
+  display: inline;
+  float: left;
+  width: 48.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+  margin-left: 4.6875%;
+}
 /**
  * Layout for responsive style through media queries.
  */
