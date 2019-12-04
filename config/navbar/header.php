@@ -70,7 +70,7 @@ return [
         ],
         [
             "text" => "Blogg",
-            "url" => "htdocs/blogg",
+            "url" => "blogg",
             "title" => "Testa olika saker med markdown",
         ],
     ],
