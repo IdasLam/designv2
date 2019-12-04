@@ -40,6 +40,11 @@ return [
                         "url" => "redovisning/kmom04",
                         "title" => "Redovisning för kmom04.",
                     ],
+                    [
+                        "text" => "Kmom05",
+                        "url" => "redovisning/kmom05",
+                        "title" => "Redovisning för kmom05.",
+                    ],
                 ],
             ],
         ],
@@ -61,6 +66,11 @@ return [
         [
             "text" => "Test",
             "url" => "test",
+            "title" => "Testa olika saker med markdown",
+        ],
+        [
+            "text" => "Blogg",
+            "url" => "htdocs/blogg",
             "title" => "Testa olika saker med markdown",
         ],
     ],
