@@ -1,16 +1,17 @@
 /**
- * Layout style for general structure of header, navbar, main, footer
- * and other regions of the page including route specific styles.
- */
+* Layout style for general structure of header, navbar, main, footer
+* and other regions of the page including route specific styles.
+*/
 
 /**
- * Variables
- */
+* Variables
+*/
 
 @hoverColor: #e64fa2;
 @boxshadow: #fff;
 @navbarColor: #fff;
 @color: #fff;
+@maxContentWidth: 1100;
 @import "@desinax/figure/less/figure.less";
 
 /* kmom03 grid */
@@ -258,6 +259,49 @@ body[class^=route-verktyg] {
         .region-main {
             #desinax-vgrid.column(@columns * 2 / 4);
             #desinax-vgrid.push(1);
+        }
+    }
+}
+
+/* blogg */
+
+body[class^=route-blogg] {
+    figure {
+        margin: 0;
+    }
+    
+    .inner-wrap-main {
+        .region-sidebar-right {
+            #desinax-vgrid.column(@columns * (1 / 4) - 1);
+            #desinax-vgrid.push(1);
+        }
+        
+        .region-main {
+            #desinax-vgrid.column(@columns * 3 / 4);
+        }
+    }
+}
+
+.route-blogg-mitt-tredje-inlagg,
+.route-blogg-mitt-forsta-inlagg,
+.route-blogg {
+    figure.figure {
+        #desinax-figure.figure(@maxContentWidth);
+    }
+
+    &.left,
+    &.right {
+        @media screen {
+            @media (max-width: round(@maxContentWidth * 2 / 3)) {
+                &.w50 {
+                    margin-left: 0;
+                    margin-right: 0;
+                    float: none;
+                    img {
+                        width: @maxContentWidth * 2 / 3;
+                    }
+                }
+            }
         }
     }
 }

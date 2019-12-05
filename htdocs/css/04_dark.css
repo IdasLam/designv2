@@ -5382,6 +5382,9 @@ hr::after {
 /**
  * Variables
  */
+/** --------------------------------------------------------------
+ * Figure through .figure
+ */
 /* kmom03 grid */
 .row {
   display: block;

@@ -1,5 +1,5 @@
 /*!
- * Stylesheet for design kmom05 - dark.
+ * Stylesheet for design kmom05.
  *
  * This stylesheet is for the design course and kmom02 where we use LESS.
  */
@@ -5388,12 +5388,12 @@ hr::after {
 * and other regions of the page including route specific styles.
 */
 /**
- * Layout style for general structure of header, navbar, main, footer
- * and other regions of the page including route specific styles.
- */
+* Layout style for general structure of header, navbar, main, footer
+* and other regions of the page including route specific styles.
+*/
 /**
- * Variables
- */
+* Variables
+*/
 /* kmom03 grid */
 .row {
   display: block;
@@ -5640,6 +5640,203 @@ body[class^=route-verktyg] .region-flash {
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
   margin-left: 4.6875%;
+}
+/* blogg */
+body[class^=route-blogg] figure {
+  margin: 0;
+}
+body[class^=route-blogg] .inner-wrap-main .region-sidebar-right {
+  display: inline;
+  float: left;
+  width: 19.79166667%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+  margin-left: 4.6875%;
+}
+body[class^=route-blogg] .inner-wrap-main .region-main {
+  display: inline;
+  float: left;
+  width: 73.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
+.route-blogg-mitt-tredje-inlagg figure.figure,
+.route-blogg-mitt-forsta-inlagg figure.figure,
+.route-blogg figure.figure {
+  display: table;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 24px;
+  /* Chrome shinks images in td */
+  /* Position the images */
+}
+.route-blogg-mitt-tredje-inlagg figure.figure img,
+.route-blogg-mitt-forsta-inlagg figure.figure img,
+.route-blogg figure.figure img {
+  max-width: 100%;
+  display: block;
+}
+.route-blogg-mitt-tredje-inlagg figure.figure figcaption,
+.route-blogg-mitt-forsta-inlagg figure.figure figcaption,
+.route-blogg figure.figure figcaption {
+  display: table-caption;
+  caption-side: bottom;
+  padding-top: 12px;
+}
+.route-blogg-mitt-tredje-inlagg figure.figure figcaption p,
+.route-blogg-mitt-forsta-inlagg figure.figure figcaption p,
+.route-blogg figure.figure figcaption p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-style: italic;
+}
+.route-blogg-mitt-tredje-inlagg figure.figure td img,
+.route-blogg-mitt-forsta-inlagg figure.figure td img,
+.route-blogg figure.figure td img {
+  max-width: none;
+}
+.route-blogg-mitt-tredje-inlagg figure.figure.center,
+.route-blogg-mitt-forsta-inlagg figure.figure.center,
+.route-blogg figure.figure.center {
+  clear: both;
+  margin: auto;
+}
+.route-blogg-mitt-tredje-inlagg figure.figure.center figcaption,
+.route-blogg-mitt-forsta-inlagg figure.figure.center figcaption,
+.route-blogg figure.figure.center figcaption {
+  text-align: center;
+}
+.route-blogg-mitt-tredje-inlagg figure.figure.left,
+.route-blogg-mitt-forsta-inlagg figure.figure.left,
+.route-blogg figure.figure.left {
+  float: left;
+  margin-right: 0.5em;
+}
+.route-blogg-mitt-tredje-inlagg figure.figure.right,
+.route-blogg-mitt-forsta-inlagg figure.figure.right,
+.route-blogg figure.figure.right {
+  float: right;
+  margin-left: 0.5em;
+}
+@media screen and (max-width: 963) {
+  .route-blogg-mitt-tredje-inlagg figure.figure.left.w67,
+  .route-blogg-mitt-forsta-inlagg figure.figure.left.w67,
+  .route-blogg figure.figure.left.w67,
+  .route-blogg-mitt-tredje-inlagg figure.figure.right.w67,
+  .route-blogg-mitt-forsta-inlagg figure.figure.right.w67,
+  .route-blogg figure.figure.right.w67 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  .route-blogg-mitt-tredje-inlagg figure.figure.left.w67 img,
+  .route-blogg-mitt-forsta-inlagg figure.figure.left.w67 img,
+  .route-blogg figure.figure.left.w67 img,
+  .route-blogg-mitt-tredje-inlagg figure.figure.right.w67 img,
+  .route-blogg-mitt-forsta-inlagg figure.figure.right.w67 img,
+  .route-blogg figure.figure.right.w67 img {
+    width: 962.5;
+  }
+}
+@media screen and (max-width: 733) {
+  .route-blogg-mitt-tredje-inlagg figure.figure.left.w50,
+  .route-blogg-mitt-forsta-inlagg figure.figure.left.w50,
+  .route-blogg figure.figure.left.w50,
+  .route-blogg-mitt-tredje-inlagg figure.figure.right.w50,
+  .route-blogg-mitt-forsta-inlagg figure.figure.right.w50,
+  .route-blogg figure.figure.right.w50 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  .route-blogg-mitt-tredje-inlagg figure.figure.left.w50 img,
+  .route-blogg-mitt-forsta-inlagg figure.figure.left.w50 img,
+  .route-blogg figure.figure.left.w50 img,
+  .route-blogg-mitt-tredje-inlagg figure.figure.right.w50 img,
+  .route-blogg-mitt-forsta-inlagg figure.figure.right.w50 img,
+  .route-blogg figure.figure.right.w50 img {
+    width: 733.33333333;
+  }
+}
+@media screen and (max-width: 688) {
+  .route-blogg-mitt-tredje-inlagg figure.figure.left.w40,
+  .route-blogg-mitt-forsta-inlagg figure.figure.left.w40,
+  .route-blogg figure.figure.left.w40,
+  .route-blogg-mitt-tredje-inlagg figure.figure.right.w40,
+  .route-blogg-mitt-forsta-inlagg figure.figure.right.w40,
+  .route-blogg figure.figure.right.w40 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  .route-blogg-mitt-tredje-inlagg figure.figure.left.w40 img,
+  .route-blogg-mitt-forsta-inlagg figure.figure.left.w40 img,
+  .route-blogg figure.figure.left.w40 img,
+  .route-blogg-mitt-tredje-inlagg figure.figure.right.w40 img,
+  .route-blogg-mitt-forsta-inlagg figure.figure.right.w40 img,
+  .route-blogg figure.figure.right.w40 img {
+    width: 687.5;
+  }
+}
+@media screen and (max-width: 550) {
+  .route-blogg-mitt-tredje-inlagg figure.figure.left.w33,
+  .route-blogg-mitt-forsta-inlagg figure.figure.left.w33,
+  .route-blogg figure.figure.left.w33,
+  .route-blogg-mitt-tredje-inlagg figure.figure.right.w33,
+  .route-blogg-mitt-forsta-inlagg figure.figure.right.w33,
+  .route-blogg figure.figure.right.w33 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  .route-blogg-mitt-tredje-inlagg figure.figure.left.w33 img,
+  .route-blogg-mitt-forsta-inlagg figure.figure.left.w33 img,
+  .route-blogg figure.figure.left.w33 img,
+  .route-blogg-mitt-tredje-inlagg figure.figure.right.w33 img,
+  .route-blogg-mitt-forsta-inlagg figure.figure.right.w33 img,
+  .route-blogg figure.figure.right.w33 img {
+    width: 550;
+  }
+}
+@media screen and (max-width: 367) {
+  .route-blogg-mitt-tredje-inlagg figure.figure.left.w25,
+  .route-blogg-mitt-forsta-inlagg figure.figure.left.w25,
+  .route-blogg figure.figure.left.w25,
+  .route-blogg-mitt-tredje-inlagg figure.figure.right.w25,
+  .route-blogg-mitt-forsta-inlagg figure.figure.right.w25,
+  .route-blogg figure.figure.right.w25 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  .route-blogg-mitt-tredje-inlagg figure.figure.left.w25 img,
+  .route-blogg-mitt-forsta-inlagg figure.figure.left.w25 img,
+  .route-blogg figure.figure.left.w25 img,
+  .route-blogg-mitt-tredje-inlagg figure.figure.right.w25 img,
+  .route-blogg-mitt-forsta-inlagg figure.figure.right.w25 img,
+  .route-blogg figure.figure.right.w25 img {
+    width: 366.66666667;
+  }
+}
+@media screen and (max-width: 733) {
+  .route-blogg-mitt-tredje-inlagg.left.w50,
+  .route-blogg-mitt-forsta-inlagg.left.w50,
+  .route-blogg.left.w50,
+  .route-blogg-mitt-tredje-inlagg.right.w50,
+  .route-blogg-mitt-forsta-inlagg.right.w50,
+  .route-blogg.right.w50 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  .route-blogg-mitt-tredje-inlagg.left.w50 img,
+  .route-blogg-mitt-forsta-inlagg.left.w50 img,
+  .route-blogg.left.w50 img,
+  .route-blogg-mitt-tredje-inlagg.right.w50 img,
+  .route-blogg-mitt-forsta-inlagg.right.w50 img,
+  .route-blogg.right.w50 img {
+    width: 733.33333333;
+  }
 }
 /**
  * Layout for responsive style through media queries.

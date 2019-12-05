@@ -64,5 +64,10 @@ return [
             "url" => "verktyg",
             "title" => "Verktyg och möjligheter för utveckling.",
         ],
+        [
+            "text" => "Blogg",
+            "url" => "blogg",
+            "title" => "Testa olika saker med markdown",
+        ],
     ],
 ];
