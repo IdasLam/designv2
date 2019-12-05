@@ -1,30 +1,47 @@
 ---
-author: mos
+author: Ida
 category:
-    - utbildning
-    - kursnyheter
+    - pizza
+    - fest
 published: "2018-12-03"
 ---
-Mitt tredje inlägg
+PIZZA PARTY
 ==================================
+<figure class="figure">
+    <img src="cimage/img.php?src=pizza.png&width=500" alt="kabbe">
+</figure>
 
-Nu har jag koll på läget, men jag måste skriva lite bättre och "catchy" rubriker.
-
-Annars kommer ingen läsa min blogg.
+Pizza är gott att konusmera.
 
 <!--more-->
 
-Man bör skriva intressanta texter, då får man fler läsare, visst är det så?
+Orginalbild, skalad ner till bredden 500px.
 
+<figure class="figure">
+    <img src="cimage/img.php?src=pizza.png&width=500&convolve=emboss-alt" alt="pizza">
+</figure>
 
+Bilden har bredden 500px, med ett filter emboss-alt.
 
-Rubrik 2 {#anchor-hit}
+<figure class="figure">
+    <img src="cimage/img.php?src=pizza.png&width=500&f=grayscale" alt="pizza">
+</figure>
+
+Bilden har bredden 500px, med ett gråskalat filter.
+
+<figure class="figure left w67">
+    <img src="cimage/img.php?src=pizza.png&width=500&r=-90" alt="pizza">
+</figure>
+
+Bilden är roterat 90 grader, innebär detta att pizzorna kommer glida av bordet?
+
+Om bilden
 -----------------------------------
 
-Text.
+Bilden är tagen från ett snett uppifrån perspektiv, när jag och mina vänner hade pizza mys. Bilden är tagen med en Iphone 6s.
 
 
 
-### Rubrik 3 {#vad-som}
+### Pizzan är från
 
-Text.
+[Bestia i Linköping](https://www.bestialkpg.se/)

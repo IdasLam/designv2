@@ -1,30 +1,47 @@
 ---
-author: mos
+author: Ida
 category:
     - utbildning
-    - kursnyheter
+    - museum
 published: "2018-11-03"
 ---
-Mitt andra inlägg
+Natural History Museum
 ==================================
+<figure class="figure">
+    <img src="cimage/img.php?src=museeum.png&width=500" alt="Natural History Museum">
+</figure>
 
-Här är mitt andra blogg inlägg.
-
-Nu börjar jag bli varm i kläderna.
+Resa till London.
 
 <!--more-->
 
-Bilder skall fixas också, javisst ja, men dem innehåler inte blogg-mallen...
+Bilden är 500px bredd, utan filter.
 
+<figure class="figure">
+    <img src="cimage/img.php?src=museeum.png&width=1100&crop-to-fit&area=50,0,0,0" alt="Natural History Museum">
+</figure>
 
+Bilden är 1100px bredd men croppad där 50% av toppen av bilden är borta.
 
-Rubrik 2 {#anchor-hit}
+<figure class="figure">
+    <img src="cimage/img.php?src=museeum.png&width=500&scale=1" alt="Natural History Museum">
+</figure>
+
+Bilden med scale 1.
+
+<figure class="figure">
+    <img src="cimage/img.php?src=museeum.png&width=500&crop-to-fit&area=30,0,0,40&f=negate" alt="Natural History Museum">
+</figure>
+
+Bilden är croppad samt med ett filter som negerar färgerna.
+
+Om bilden
 -----------------------------------
 
-Text.
+Bilden är tagen i London på Natural History Museum under sommaren 2018, tagen med mobilen. 
 
 
 
-### Rubrik 3 {#vad-som}
+### Museet
 
-Text.
+[Natural History Museum](https://www.nhm.ac.uk/)

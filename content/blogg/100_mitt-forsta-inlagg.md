@@ -1,30 +1,45 @@
 ---
-author: mos
+author: Ida
 category:
-    - utbildning
+    - katt
     - kursnyheter
 published: "2018-10-03"
 ---
-Mitt första inlägg
+Nyvaken katt
 ==================================
 
-Här är mitt allra första blogg inlägg.
+<figure class="figure">
+    <img src="cimage/img.php?src=katt.png&width=500" alt="Natural History Museum">
+</figure>
 
-Ett blogg-inlägg innehåller en tagg för `<!--more-->` som bestämmer vilken text som visas på förstasidan.
+Kisse missen sover dygnet runt.
 
 <!--more-->
 
-Sen handlar det om att skriva sina blogg-inlägg...
+Orginalbild, skalad ner till bredden 500px.
+
+<figure class="figure left w50">
+    <img src="cimage/img.php?src=katt.png&width=300&crop-to-fit&area=10,20,60,60" alt="Natural History Museum">
+    <figcaption>
+        <p>Croppad bild på halva kattens ansikte.</p>
+    </figcaption>
+</figure>
+
+<figure class="figure right w50">
+    <img src="cimage/img.php?src=katt.png&width=300&crop-to-fit&area=10,20,60,60&f=smooth,-10" alt="Natural History Museum">
+    <figcaption>
+        <p>Croppad bild på halva kattens ansikte med filter som gör bilden "vassare".</p>
+    </figcaption>
+</figure>
 
 
+<figure class="figure center">
+    <img src="cimage/img.php?src=katt.png&width=300&crop-to-fit&area=10,20,60,60&r=90&f=emboss" alt="Natural History Museum">
+</figure>
 
-Rubrik 2 {#anchor-hit}
+Samma bild fast roterad med ett embossed filter.
+
+Om bilden
 -----------------------------------
 
-Text.
-
-
-
-### Rubrik 3 {#vad-som}
-
-Text.
+Kisse misse tagen med en Iphone 6s, nyvaken katt som kanske är lite arg på mig eftersom jag råka väcka henne.
