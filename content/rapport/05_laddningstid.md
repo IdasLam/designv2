@@ -13,6 +13,8 @@ Vi använde oss av webbläsaren Chrome och Networks som finns i Devtools, utan c
 
 Resultat
 -----------------------
+<a href="https://docs.google.com/spreadsheets/d/1NwTc29KKtBwFAS8mNGscYVHB-cn63zVxXrweqc2RlHM/edit?usp=sharing">Här hittar du excelarket</a>
+
 __OTTOS-glass:__
 
 <img src="../htdocs/img/otto.png" alt="OTTO glass" height="400px">
@@ -42,6 +44,7 @@ Startsidan av deras hemsida fick 45 poäng på mobila enheter medan 82 på deskt
 Sidan för skopglass på webbsidan fick betyget 57 på mobila enheter och betyget 92 för PC. 2,5 sekunder är medelvärdet för att ladda hemsidan. Antalet requests är 93 och storleken för hemsidan ligger på 3,5 MB.
 
 Ben & Jerry’s sida för smaker fick betyget 56 för mobila enheter medan desktop fick 89. Sidan gjorde även 97 requests, med storleken av 3,6 MB, på laddningstiden 2,51 sekunder.
+
 
 Analys
 -----------------------
@@ -95,7 +98,7 @@ Referenser
 
 <a href="https://developers.google.com/speed/pagespeed/insights/">PageSpeed</a>
 
-<a href="https://docs.google.com/spreadsheets/d/1NwTc29KKtBwFAS8mNGscYVHB-cn63zVxXrweqc2RlHM/edit?usp=sharing">Excellark</a>
+<a href="https://docs.google.com/spreadsheets/d/1NwTc29KKtBwFAS8mNGscYVHB-cn63zVxXrweqc2RlHM/edit?usp=sharing">Excelark</a>
 
 
 Övrigt
