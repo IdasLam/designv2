@@ -1,0 +1,45 @@
+@bgColorBody: #636363;
+@bgColor: #1b1b1b;
+@boxshadow: rgba(0, 0, 0, 0.1);
+@color: #e8e8e8;
+@navbarColor: #e8e8e8;
+@accentColor: #ffadd2;
+
+// Magic number and base fontsize
+@magicNumber:  24px;  // fontsize * line height
+@fontSizeBody: 16px;
+
+// Default font-families
+@fontFamilyHeadings: 'Oswald', sans-serif;
+@fontFamilyBody:     Roboto, "sans-serif";
+@fontFamilyCode:     "monospace";
+
+// header h1-h6 borders
+@colorH1BorderBottom: @accentColor;
+@colorH2BorderBottom: @accentColor;
+@colorH3BorderBottom: @accentColor;
+@colorH4BorderBottom: @accentColor;
+
+
+// small changes in style
+.site-logo-text-icon img {
+    display: none;
+}
+
+.site-logo-text-icon {
+    content: url("../../htdocs/img/logo_white.svg");
+    height: 80px;
+    padding-left: 38%;
+}
+
+.hero-block p:first-child img {
+    box-shadow: 10px 10px @accentColor;
+}
+
+code {
+    color: @bgColorBody;
+}
+
+a {
+    color: @accentColor;
+}

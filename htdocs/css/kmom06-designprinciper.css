@@ -1,24 +1,36 @@
 /*!
- * Stylesheet for design kmom04 - minimalistic.
+ * Stylesheet for design kmom06 designelement.
  *
  * This stylesheet is for the design course and kmom02 where we use LESS.
+ */
+/**
+* Import desinax figure
+*/
+/**
+ * Figure with ASCIINEMA
+ */
+/**
+ * Figure with Codepen
+ */
+/** --------------------------------------------------------------
+ * Figure through .figure
  */
 /**
 * Import Fonts
 */
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Oswald';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/oswald/v29/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUZiYA.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Playfair Display';
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Playfair Display Regular'), local('PlayfairDisplay-Regular'), url(https://fonts.gstatic.com/s/playfairdisplay/v18/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYhQ.ttf) format('truetype');
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
 }
 /**
  * Normalize and reset the style.
@@ -5079,13 +5091,13 @@ html {
 }
 html,
 body {
-  background-color: #f1f1f1;
+  background-color: #1b1b1b;
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
-  color: #262626;
+  font-family: Roboto, "sans-serif";
+  color: #e8e8e8;
 }
 body {
-  font: 16px/1.5 'Open Sans', sans-serif;
+  font: 16px/1.5 Roboto, "sans-serif";
 }
 h1,
 h2,
@@ -5093,7 +5105,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Oswald', sans-serif;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -5109,7 +5121,7 @@ h1 {
   font-size: 2.375em;
   line-height: 1.26315789;
   font-weight: normal;
-  border-bottom: 1px solid #006D75;
+  border-bottom: 1px solid #ffadd2;
   margin-bottom: 23px;
 }
 h1 ~ h1,
@@ -5128,7 +5140,7 @@ h2 {
   line-height: 1.6;
   font-weight: normal;
   margin-bottom: 23px;
-  border-bottom: 1px solid #006D75;
+  border-bottom: 1px solid #ffadd2;
 }
 h2 + h3 {
   margin-top: 24px;
@@ -5138,7 +5150,7 @@ h3 {
   line-height: 1.71428571;
   font-weight: normal;
   margin-bottom: 23px;
-  border-bottom: 1px solid #006D75;
+  border-bottom: 1px solid #ffadd2;
 }
 h3 + h4 {
   margin-top: 24px;
@@ -5148,7 +5160,7 @@ h4 {
   line-height: 1;
   font-weight: normal;
   margin-bottom: 23px;
-  border-bottom: 1px solid #006D75;
+  border-bottom: 1px solid #ffadd2;
 }
 h4 + h5 {
   margin-top: 24px;
@@ -5376,15 +5388,12 @@ hr::after {
 * and other regions of the page including route specific styles.
 */
 /**
- * Layout style for general structure of header, navbar, main, footer
- * and other regions of the page including route specific styles.
- */
+* Layout style for general structure of header, navbar, main, footer
+* and other regions of the page including route specific styles.
+*/
 /**
- * Variables
- */
-/** --------------------------------------------------------------
- * Figure through .figure
- */
+* Variables
+*/
 /* kmom03 grid */
 .row {
   display: block;
@@ -5427,17 +5436,17 @@ hr::after {
 }
 /* Header and navbar */
 .rm-desktop ul {
-  background-color: #f5f5f5 !important;
+  background-color: #636363 !important;
 }
 .rm-default.rm-mobile.rm-clicked {
-  background-color: #262626;
+  background-color: #e8e8e8;
 }
 .rm-mobile,
 .rm-max .rm-small .rm-button.rm-clicked {
-  color: #f5f5f5;
+  color: #636363;
 }
 .outer-wrap-header {
-  background-color: #f5f5f5;
+  background-color: #636363;
   padding: 2vh;
 }
 .outer-wrap-header .inner-wrap-header {
@@ -5475,15 +5484,15 @@ hr::after {
 }
 .outer-wrap-header .my-navbar.rm-default.rm-desktop li a {
   padding-left: 0;
-  color: #262626;
+  color: #e8e8e8;
   text-decoration: none;
   transition: color 0.3s;
 }
 .outer-wrap-header .my-navbar.rm-default.rm-desktop li a:hover {
-  color: #006D75;
+  color: #ffadd2;
 }
 .outer-wrap-header .rm-button.rm-clicked {
-  color: #f5f5f5;
+  color: #636363;
 }
 .outer-wrap-header .rm-max.rm-navbar {
   top: 5vh;
@@ -5496,7 +5505,7 @@ hr::after {
 .hero-block p:first-child img {
   margin-left: -10px;
   width: 265px;
-  box-shadow: 10px 10px #f1f1f1;
+  box-shadow: 10px 10px #1b1b1b;
 }
 .hero-block .text-about-me {
   margin-left: 17.1875%;
@@ -5536,7 +5545,7 @@ hr::after {
 }
 /* background color on other pages */
 .outer-wrap-main {
-  background-color: #f5f5f5;
+  background-color: #636363;
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
   padding: 2vh;
 }
@@ -5561,7 +5570,7 @@ body[class^=route-redovisning] .breadcrumb-list {
 }
 body[class^=route-redovisning] .outer-wrap-flash-message {
   padding: 20px;
-  background-color: #f5f5f5;
+  background-color: #636363;
 }
 body[class^=route-redovisning] .block.toc .toc,
 body[class^=route-verktyg] .block.toc .toc {
@@ -5570,7 +5579,7 @@ body[class^=route-verktyg] .block.toc .toc {
 }
 body[class^=route-redovisning] .block.toc .toc li a,
 body[class^=route-verktyg] .block.toc .toc li a {
-  color: #262626;
+  color: #e8e8e8;
 }
 /* rapport */
 body[class^=route-rapport] .outer-wrap-breadcrumb {
@@ -5594,7 +5603,7 @@ body[class^=route-rapport] .outer-wrap-breadcrumb {
 }
 /* stylechooser page */
 .route-style .outer-wrap-flash-message {
-  background-color: #f5f5f5;
+  background-color: #636363;
   padding: 10px;
 }
 .route-style .region-main {
@@ -5631,6 +5640,261 @@ body[class^=route-verktyg] .region-flash {
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
   margin-left: 4.6875%;
+}
+/* blogg */
+body[class^=route-blogg] figure {
+  margin: 0;
+}
+body[class^=route-blogg] .inner-wrap-main .region-sidebar-right {
+  display: inline;
+  float: left;
+  width: 19.79166667%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+  margin-left: 4.6875%;
+}
+body[class^=route-blogg] .inner-wrap-main .region-main {
+  display: inline;
+  float: left;
+  width: 73.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
+.route-blogg-mitt-tredje-inlagg figure.figure,
+.route-blogg-mitt-forsta-inlagg figure.figure,
+.route-blogg figure.figure {
+  display: table;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 24px;
+  /* Chrome shinks images in td */
+  /* Position the images */
+}
+.route-blogg-mitt-tredje-inlagg figure.figure img,
+.route-blogg-mitt-forsta-inlagg figure.figure img,
+.route-blogg figure.figure img {
+  max-width: 100%;
+  display: block;
+}
+.route-blogg-mitt-tredje-inlagg figure.figure figcaption,
+.route-blogg-mitt-forsta-inlagg figure.figure figcaption,
+.route-blogg figure.figure figcaption {
+  display: table-caption;
+  caption-side: bottom;
+  padding-top: 12px;
+}
+.route-blogg-mitt-tredje-inlagg figure.figure figcaption p,
+.route-blogg-mitt-forsta-inlagg figure.figure figcaption p,
+.route-blogg figure.figure figcaption p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-style: italic;
+}
+.route-blogg-mitt-tredje-inlagg figure.figure td img,
+.route-blogg-mitt-forsta-inlagg figure.figure td img,
+.route-blogg figure.figure td img {
+  max-width: none;
+}
+.route-blogg-mitt-tredje-inlagg figure.figure.center,
+.route-blogg-mitt-forsta-inlagg figure.figure.center,
+.route-blogg figure.figure.center {
+  clear: both;
+  margin: auto;
+}
+.route-blogg-mitt-tredje-inlagg figure.figure.center figcaption,
+.route-blogg-mitt-forsta-inlagg figure.figure.center figcaption,
+.route-blogg figure.figure.center figcaption {
+  text-align: center;
+}
+.route-blogg-mitt-tredje-inlagg figure.figure.left,
+.route-blogg-mitt-forsta-inlagg figure.figure.left,
+.route-blogg figure.figure.left {
+  float: left;
+  margin-right: 0.5em;
+}
+.route-blogg-mitt-tredje-inlagg figure.figure.right,
+.route-blogg-mitt-forsta-inlagg figure.figure.right,
+.route-blogg figure.figure.right {
+  float: right;
+  margin-left: 0.5em;
+}
+@media screen and (max-width: 963) {
+  .route-blogg-mitt-tredje-inlagg figure.figure.left.w67,
+  .route-blogg-mitt-forsta-inlagg figure.figure.left.w67,
+  .route-blogg figure.figure.left.w67,
+  .route-blogg-mitt-tredje-inlagg figure.figure.right.w67,
+  .route-blogg-mitt-forsta-inlagg figure.figure.right.w67,
+  .route-blogg figure.figure.right.w67 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  .route-blogg-mitt-tredje-inlagg figure.figure.left.w67 img,
+  .route-blogg-mitt-forsta-inlagg figure.figure.left.w67 img,
+  .route-blogg figure.figure.left.w67 img,
+  .route-blogg-mitt-tredje-inlagg figure.figure.right.w67 img,
+  .route-blogg-mitt-forsta-inlagg figure.figure.right.w67 img,
+  .route-blogg figure.figure.right.w67 img {
+    width: 962.5;
+  }
+}
+@media screen and (max-width: 733) {
+  .route-blogg-mitt-tredje-inlagg figure.figure.left.w50,
+  .route-blogg-mitt-forsta-inlagg figure.figure.left.w50,
+  .route-blogg figure.figure.left.w50,
+  .route-blogg-mitt-tredje-inlagg figure.figure.right.w50,
+  .route-blogg-mitt-forsta-inlagg figure.figure.right.w50,
+  .route-blogg figure.figure.right.w50 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  .route-blogg-mitt-tredje-inlagg figure.figure.left.w50 img,
+  .route-blogg-mitt-forsta-inlagg figure.figure.left.w50 img,
+  .route-blogg figure.figure.left.w50 img,
+  .route-blogg-mitt-tredje-inlagg figure.figure.right.w50 img,
+  .route-blogg-mitt-forsta-inlagg figure.figure.right.w50 img,
+  .route-blogg figure.figure.right.w50 img {
+    width: 733.33333333;
+  }
+}
+@media screen and (max-width: 688) {
+  .route-blogg-mitt-tredje-inlagg figure.figure.left.w40,
+  .route-blogg-mitt-forsta-inlagg figure.figure.left.w40,
+  .route-blogg figure.figure.left.w40,
+  .route-blogg-mitt-tredje-inlagg figure.figure.right.w40,
+  .route-blogg-mitt-forsta-inlagg figure.figure.right.w40,
+  .route-blogg figure.figure.right.w40 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  .route-blogg-mitt-tredje-inlagg figure.figure.left.w40 img,
+  .route-blogg-mitt-forsta-inlagg figure.figure.left.w40 img,
+  .route-blogg figure.figure.left.w40 img,
+  .route-blogg-mitt-tredje-inlagg figure.figure.right.w40 img,
+  .route-blogg-mitt-forsta-inlagg figure.figure.right.w40 img,
+  .route-blogg figure.figure.right.w40 img {
+    width: 687.5;
+  }
+}
+@media screen and (max-width: 550) {
+  .route-blogg-mitt-tredje-inlagg figure.figure.left.w33,
+  .route-blogg-mitt-forsta-inlagg figure.figure.left.w33,
+  .route-blogg figure.figure.left.w33,
+  .route-blogg-mitt-tredje-inlagg figure.figure.right.w33,
+  .route-blogg-mitt-forsta-inlagg figure.figure.right.w33,
+  .route-blogg figure.figure.right.w33 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  .route-blogg-mitt-tredje-inlagg figure.figure.left.w33 img,
+  .route-blogg-mitt-forsta-inlagg figure.figure.left.w33 img,
+  .route-blogg figure.figure.left.w33 img,
+  .route-blogg-mitt-tredje-inlagg figure.figure.right.w33 img,
+  .route-blogg-mitt-forsta-inlagg figure.figure.right.w33 img,
+  .route-blogg figure.figure.right.w33 img {
+    width: 550;
+  }
+}
+@media screen and (max-width: 367) {
+  .route-blogg-mitt-tredje-inlagg figure.figure.left.w25,
+  .route-blogg-mitt-forsta-inlagg figure.figure.left.w25,
+  .route-blogg figure.figure.left.w25,
+  .route-blogg-mitt-tredje-inlagg figure.figure.right.w25,
+  .route-blogg-mitt-forsta-inlagg figure.figure.right.w25,
+  .route-blogg figure.figure.right.w25 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  .route-blogg-mitt-tredje-inlagg figure.figure.left.w25 img,
+  .route-blogg-mitt-forsta-inlagg figure.figure.left.w25 img,
+  .route-blogg figure.figure.left.w25 img,
+  .route-blogg-mitt-tredje-inlagg figure.figure.right.w25 img,
+  .route-blogg-mitt-forsta-inlagg figure.figure.right.w25 img,
+  .route-blogg figure.figure.right.w25 img {
+    width: 366.66666667;
+  }
+}
+@media screen and (max-width: 733) {
+  .route-blogg-mitt-tredje-inlagg.left.w50,
+  .route-blogg-mitt-forsta-inlagg.left.w50,
+  .route-blogg.left.w50,
+  .route-blogg-mitt-tredje-inlagg.right.w50,
+  .route-blogg-mitt-forsta-inlagg.right.w50,
+  .route-blogg.right.w50 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  .route-blogg-mitt-tredje-inlagg.left.w50 img,
+  .route-blogg-mitt-forsta-inlagg.left.w50 img,
+  .route-blogg.left.w50 img,
+  .route-blogg-mitt-tredje-inlagg.right.w50 img,
+  .route-blogg-mitt-forsta-inlagg.right.w50 img,
+  .route-blogg.right.w50 img {
+    width: 733.33333333;
+  }
+}
+.balance-proportion {
+  background-color: #f5f5f5;
+  color: #595959;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.balance-proportion h1 {
+  border: none;
+}
+.balance-proportion h1 {
+  font-size: 4em;
+}
+.balance-proportion div {
+  align-self: center;
+}
+.prespektive {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  color: #595959;
+}
+.prespektive h2 {
+  border: none;
+  text-align: center;
+}
+.prespektive div {
+  background-color: #f5f5f5;
+  transition: 0.3s;
+}
+.prespektive div:hover {
+  box-shadow: -11px 20px 26px -2px rgba(43, 43, 43, 0.452);
+  cursor: pointer;
+}
+.bread {
+  margin-top: 20px;
+  background-color: #f5f5f5;
+  color: #595959;
+}
+.bread img {
+  width: 100%;
+  filter: grayscale(0.4);
+}
+.bread div {
+  text-align: center;
+  padding: 20px;
+  margin: auto 0;
+  height: 110px;
+}
+.bread div h2,
+.bread div p {
+  border: none;
+  margin: 0;
+}
+.bread div h2 {
+  margin-top: 15px;
 }
 /**
  * Layout for responsive style through media queries.
@@ -5755,6 +6019,20 @@ body[class^=route-verktyg] .region-flash {
 /**
 * Minimalistic theme
 */
-.outer-wrap-header .my-navbar.rm-default.rm-desktop {
+.site-logo-text-icon img {
   display: none;
+}
+.site-logo-text-icon {
+  content: url("../../htdocs/img/logo_white.svg");
+  height: 80px;
+  padding-left: 38%;
+}
+.hero-block p:first-child img {
+  box-shadow: 10px 10px #ffadd2;
+}
+code {
+  color: #636363;
+}
+a {
+  color: #ffadd2;
 }
