@@ -1,13 +1,5 @@
 <div class="content-designelement">
     <h1><span>Designelement</span> kmom06</h1>
-    <p>De designelement jag har valt att jobba med:</p>
-    <ul>
-        <li>Prespektiv</li>
-        <li>Balans</li>
-        <li>Proportion</li>
-        <li>Hierarki</li>
-        <li>Variation</li>
-    </ul>
     <div class="balance-proportion">
         <div>
             <h1>France.</h1>
