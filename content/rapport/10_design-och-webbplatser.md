@@ -54,7 +54,7 @@ Sidan gjorde 71 request med storleken 4,1 MB. Laddningstiden för Apples webbpla
 
 ##_OnePlus:_
 
-<img src="../htdocs/image/oneplus.png?h=55%" alt="OnePlus website">
+<img src="../htdocs/image/oneplus.png?h=40%" alt="OnePlus website">
 
 ####Färgpalett
 <table style="border-spacing: 4px; border-collapse: separate">
@@ -134,19 +134,23 @@ Analys
 Resultatet på laddningshastighet som erhålls på respektive sidor beror naturligtvis på uppkoppling. I denna analys har wifi använts.
 
 _Apple:_
+
 Apple har en ganska stilren hemsida med ett liten färgpalett, vi spekulerar att de vill framhäva färgerna hos deras produkter och har därför valt att använda sig ganska ljus färgpalett. Med hjälp av denna strategin så ser man tydligt vad de säljer utan att ha hunnit läsa “rubriken” till produkten.
 
 De har även valt att använd sig av färgen #fff för att dela upp elementen. Mellan varje element i gridet är det vitt. Denna färgen är ganska subtil till den gråa färgen som finns i bakgrunden i panelerna, men är tillräckligt för att ögat ska kunna se när panelen tar slut.
 
 _OnePlus:_
+
 OnePlus har även en ganska stilren hemsida då de använder sig av en “card layout” men har även likt Apple en uppdelning mellan varje panel med vit bakgrund. Till skillnad från Apple har OnePlus använt sig mer av olika färger, i form av både bilder och bakgrundsfärger till vissa paneler. Dessutom har OnePlus även tre accentfärgen jämfört med de andra sidorna som endast har en accentfärg.
 
 _BlackBerry:_
+
 Till skillnad från de andra sidorna använder BlackBerry sig av ett ganska mörkt tema, vilket kanske kommer från namnet. Vi spekulerar att de har valt att ha lyster kring sina produkter för att framhäva texturerna på sina mobiler. Bilderna på webbplatsen har också ett mer avskalat färgschema än bilderna på de andra webbplatserna.
 
 Det som också skiljer BlackBerrys sida från de andra är att de inte använder hela bredden på fönstret, förutom deras navbar och footer.
 
 _Laddningstid:_
+
 Apple och OnePlus är snarlika varandra, både i laddningstid och total-storlek. BlackBerrys laddningstid är strax över 2 sekunder långsammare än tidigare webbplatser. Webbplatsen för BlackBerrys total-storlek är ungefär 1,5MB större än Apples och OnePlus.
 
 Alla webbplatserna har en poäng på under 60 i testet för mobila enheter på PageSpeed. Apple är de som är bäst då de har 57 poäng. OnePlus resultat är något lägre, 42 poäng. BlackBerry har endast fått 26 poäng i testet. Detta är något som förvånar oss då det är stora företag och produkten de säljer är mobiler.
@@ -160,6 +164,7 @@ Vi har rankat webbplatserna med laddningstid och resultaten från PageSpeed i å
 3. BlackBerry
 
 _Generell analys färger:_
+
 Det alla hemsidorna har gemensamt i färgpaletten är att alla har en blå accentfärg. Vi tror att de har valt att använda den blåa färgen då det kan associeras med stabilitet och skicklighet. Man kan nog anta att de vill koppla det till sina produkter, bra kvalite och snabba.
 
 Referenser
