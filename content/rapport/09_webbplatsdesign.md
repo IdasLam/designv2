@@ -16,6 +16,19 @@ Resultat
 _Chanel:_
 <img src="../htdocs/img/chanel.png" alt="Bild på chanel-hemsida" height="400px">
 
+<table style="border-spacing: 4px; border-collapse: separate">
+            <tbody>
+                <tr>
+                    <td style="height: 50px; width: 50px; background-color: #000">
+                    </td>
+                    <td style="height: 50px; width: 50px; background-color: #e5e9e9">
+                    </td>
+                    <td style="height: 50px; width: 50px; background-color: #fff">
+                    </td>
+                </tr>
+            </tbody>
+  </table>
+
 När man kommer in på hemsidan så är det första man ser är deras hero image, som är lika stor som hemsidans bredd. Medan om man tittar uppåt så kommer man att loggat i mitten tillsammans med en centrerad navbar, med ikoner på höger sidan.
 
 När man scrollar nedåt så ser man överlappande designelement i form av bilder som även tar upp hela sidans bredd. På varje bild finns det även en centrerad text och knapp på botten av respektive bild. Medan när man väl är längst ner på sidan så ser man att loggan återigen är centrerad med godtyckligt mycket white space runt om innan footern kommer.
@@ -28,6 +41,19 @@ Fonten på sidan är endast i sans serifer samt även är texten ganska liten p�
 
 _Givenchy:_
 <img src="../htdocs/img/givenchy.png" alt="Bild på givenchy-hemsida" height="400px">
+
+<table style="border-spacing: 4px; border-collapse: separate">
+            <tbody>
+                <tr>
+                    <td style="height: 50px; width: 50px; background-color: #000">
+                    </td>
+                    <td style="height: 50px; width: 50px; background-color: #f6f6f6">
+                    </td>
+                    <td style="height: 50px; width: 50px; background-color: #fff">
+                    </td>
+                </tr>
+            </tbody>
+  </table>
 
 Framsidan består av en hero slide av olika bilder som är lika bred som sidans bredd, men som även ligger “over the fold”. Header bestås av en logga som ligger centrerad tillsammans med en centered navbar, samt finns det även språk och land inställningar på vänstra sidan medan ikoner på den högra.
 
@@ -42,6 +68,16 @@ Fonterna på Givenchy’s hemsida är i en sans serif font där av fontstorleken
 _Alexander McQueen:_
 
 <img src="../htdocs/img/alexmcqueen.png" alt="Bild på alexander mcqueen-hemsida" height="400px">
+<table style="border-spacing: 4px; border-collapse: separate">
+            <tbody>
+                <tr>
+                    <td style="height: 50px; width: 50px; background-color: #808080">
+                    </td>
+                    <td style="height: 50px; width: 50px; background-color: #fff">
+                    </td>
+                </tr>
+            </tbody>
+  </table>
 
 När man går in på sidan så bemöts man av en video header som är lika stor som sidans bredd, som inte har autoplay. På headern finns loggan i mitten tillsammans med en navbar, med ikoner och en sökfunktion till höger om navbaren och loggan.
 
@@ -53,6 +89,18 @@ Fonten på sidan är främst i sans serif, med undantag till loggan som är en s
 
 _Balenciaga:_
 <img src="../htdocs/img/balenciaga.png" alt="Bild på balenciaga-hemsida" height="400px">
+<table style="border-spacing: 4px; border-collapse: separate">
+            <tbody>
+                <tr>
+                    <td style="height: 50px; width: 50px; background-color: #000">
+                    </td>
+                    <td style="height: 50px; width: 50px; background-color: #aaaaac">
+                    </td>
+                    <td style="height: 50px; width: 50px; background-color: #fff">
+                    </td>
+                </tr>
+            </tbody>
+  </table>
 
 När man går in på Balenciagas hemsida så bemöts man av väldigt mycket white space, vilket är nog det första man lägger märke till. Balenciagas hemsida har en grid baserad layout, med synliga streck, som även finns i både footern och headern. Headern på sidan skulle man nog kunna säga täcker hela fönstrets bredd och höjd, trots att det inte ligger i header elementet. Loggan finns på höger hörnet medan på samma rad finns det en sökfunktion och ikoner längst bort. Medan navbaren på sidan är indelat i ett grid med en centrerad länk till respektive kategori. 
 

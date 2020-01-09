@@ -5772,3 +5772,6 @@ code {
 a {
   color: #ffadd2;
 }
+article table tr {
+  box-shadow: unset;
+}
